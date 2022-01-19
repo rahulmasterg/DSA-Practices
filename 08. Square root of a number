@@ -1,0 +1,25 @@
+/*
+
+Enter any number
+625
+Square root of 625 = 25
+
+*/
+
+
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    int num;
+    cout<<"Enter any number"<<endl;
+    cin>>num;
+   
+    // print the square root of $num
+    cout <<"Square root of "<<num<<" = "<<sqrt(num);
+
+    return 0;
+}
