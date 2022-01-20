@@ -1,0 +1,25 @@
+/*
+
+Enter a number for finding factorial
+6
+Factorial of given number = 720
+
+*/
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int num,fact=1;
+    
+    cout<<"Enter a number for finding factorial"<<endl;
+    cin>>num;
+    
+    for(int i=1;i<=num;i++)
+    {
+        fact=fact*i;
+    }
+    
+    cout<<"Factorial of given number = "<<fact;
+    return 0;
+}
