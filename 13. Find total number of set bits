@@ -1,0 +1,35 @@
+/*
+
+Enter any number
+2   -> 1 0  -> 1+0=1
+3   -> 1 1  -> 1+1=2           -> ans = 1+2=3
+Total number of set bits in 2 & 3 = 3
+
+
+*/
+
+
+#include<iostream>
+using namespace std;
+
+int answer(int num){
+    int sum=0;
+    while(num!=0){
+        int c=num%2;
+        num =num/2;
+        sum=sum+c;
+    }
+    
+    return sum;
+}
+
+
+int main(){
+    int a,b;
+    cout<<"Enter any number"<<endl;
+    cin>>a>>b;
+    
+    int ans = answer(a)+answer(b);
+    cout<<"Total number of set bits in "<<a<<" & "<<b<<" = "<<ans;
+    return 0;
+}
