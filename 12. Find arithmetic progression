@@ -1,0 +1,29 @@
+/*
+
+Enter any number
+4
+Arithmetic Progression(A.P) of 4 = 27
+
+
+*/
+
+
+#include<iostream>
+using namespace std;
+
+int ap(int n){
+    int a=3, d=8;
+    
+    return (a+(n-1)*d);
+}
+
+
+int main(){
+    int n;
+    cout<<"Enter any number"<<endl;
+    cin>>n;
+    
+    int AP = ap(n);
+    cout<<"Arithmetic Progression(A.P) of "<<n<<" = "<<AP;
+    return 0;
+}
