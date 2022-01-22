@@ -1,0 +1,39 @@
+/*
+
+
+#Outpot
+
+Enter any number
+9
+No
+
+Enter any number
+16
+Yes
+
+
+*/
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter any number"<<endl;
+    cin>>n;
+    int sum = 0;
+    
+    int rem=0;
+    while(n!=0){
+        rem = n%2;
+        sum = sum + rem;
+        n=n/2;
+    }
+    
+    if(sum==1){
+        cout<<"Yes";
+    }else{
+        cout<<"No";
+    }
+    
+    return 0;
+}
