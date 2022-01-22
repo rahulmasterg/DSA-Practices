@@ -1,0 +1,41 @@
+/*
+
+
+#Outpot
+
+Enter any number
+9
+No
+
+Enter any number
+16
+Yes
+
+
+*/
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter any number"<<endl;
+    cin>>n;
+    bool flag = 0;
+    for(int i=0;i<n;i++){
+        if(n==(pow(2,i))){
+            flag=1;
+            break;
+        }else{
+            flag=0;
+        }
+    }
+    
+    if(flag==1){
+        cout<<"Yes";
+    }else{
+        cout<<"No";
+    }
+    
+    return 0;
+}
