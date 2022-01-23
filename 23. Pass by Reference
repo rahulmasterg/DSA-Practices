@@ -1,0 +1,30 @@
+/*
+#Output:-
+
+5
+Before update: 5
+After update: 6
+
+*/
+
+
+
+#include<iostream>
+using namespace std;
+
+int update(int& n){
+     n++;
+     return n;
+}
+
+int main(){
+    int n;
+    cin>>n;
+
+    cout<<"Before update: "<<n<<endl;
+
+    update(n);
+
+    cout<<"After update: "<<n;
+    return 0;
+}
