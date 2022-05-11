@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+	vector <int> v1 = {5, 6, 3, 5, 2, 3, 7};
+	vector <int> v2 = {2,6,4,7,8,0};
+	
+	int n = v1.size();
+	int m = v2.size();
+	
+	for(int i=0; i<n; i++){
+		for(int j=0; j<m; j++){
+			if(v1[i]==v2[j]){
+				cout<<v1[i];
+			}
+		}
+	}
+
+}
